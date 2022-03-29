@@ -20,10 +20,7 @@ let package = Package(
             dependencies: ["TensorFlowLiteC", "TensorFlowLiteCCoreML", "TensorFlowLiteCMetal"],
             path: "TensorFlowLiteSwift",
             linkerSettings: [
-                .linkedFramework("Metal"),
-                .linkedFramework("CoreML"),
                 .linkedLibrary("c++"),
-                .linkedFramework("Foundation")
             ]
         ),
         .binaryTarget(

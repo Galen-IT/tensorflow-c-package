@@ -13,7 +13,7 @@
 // limitations under the License.
 
 
-@_implementationOnly import TensorFlowLiteCMetal
+import TensorFlowLiteCMetal
 
 /// A delegate that uses the `Metal` framework for performing TensorFlow Lite graph operations with
 /// GPU acceleration.

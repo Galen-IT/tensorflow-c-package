@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import Foundation
-@_implementationOnly import TensorFlowLiteC
+import TensorFlowLiteC
 
 /// An input or output tensor in a TensorFlow Lite graph.
 public struct Tensor: Equatable, Hashable {

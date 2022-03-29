@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import Foundation
-@_implementationOnly import TensorFlowLiteC
+import TensorFlowLiteC
 
 #if os(Linux)
   import SwiftGlibc

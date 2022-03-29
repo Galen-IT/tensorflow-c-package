@@ -13,7 +13,7 @@
 // limitations under the License.
 
 
-@_implementationOnly import TensorFlowLiteCCoreML
+import TensorFlowLiteCCoreML
 
 /// A delegate that uses the `Core ML` framework for performing TensorFlow Lite graph operations.
 ///
