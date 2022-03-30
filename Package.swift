@@ -4,25 +4,25 @@
 import PackageDescription
 
 let package = Package(
-    name: "galenit-tensorflow",
+    name: "galenit-tensorflowc",
     platforms: [
         .iOS(.v14)
     ],
     products: [
         .library(
-            name: "GalenitTensorFlow",
-            targets: ["TensorFlowLite"]
+            name: "GalenitTensorFlowC",
+            targets: ["TensorFlowLiteC", "TensorFlowLiteCCoreML", "TensorFlowLiteCMetal"]
         ),
     ],
     targets: [
-        .target(
-            name: "TensorFlowLite",
-            dependencies: ["TensorFlowLiteC", "TensorFlowLiteCCoreML", "TensorFlowLiteCMetal"],
-            path: "TensorFlowLiteSwift",
-            linkerSettings: [
-                .linkedLibrary("c++"),
-            ]
-        ),
+//        .target(
+//            name: "TensorFlowLite",
+//            dependencies: ["TensorFlowLiteC", "TensorFlowLiteCCoreML", "TensorFlowLiteCMetal"],
+//            path: "TensorFlowLiteSwift",
+//            linkerSettings: [
+//                .linkedLibrary("c++"),
+//            ]
+//        ),
         .binaryTarget(
             name: "TensorFlowLiteC",
             url: "https://github.com/galen-it/tensorflow-ios-package/releases/download/2.7.0/TensorFlowLiteC.xcframework.zip",
